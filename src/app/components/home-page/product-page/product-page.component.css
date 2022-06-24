@@ -1,0 +1,366 @@
+img {
+    max-width: 100%;
+    height: auto
+}
+
+.detail {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    z-index: 99999999999;
+}
+
+.breadcrumb-content {
+    display: inline-block;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.breadcrumb-content ul li {
+    display: inline-block;
+}
+
+.breadcrumb-content ul li a {
+    color: #212529;
+}
+
+.breadcrumb-content ul li a:hover {
+    color: #f5a623;
+    text-decoration: none;
+}
+
+.breadcrumb-content ul li i {
+    color: #334862;
+}
+
+.product-gallery {
+    padding: 0px 20px;
+}
+
+.product-image-detail {
+    margin: auto;
+    position: relative;
+}
+
+.product-thumbs {
+    position: relative;
+}
+
+.product-thumbs .sliderProduct {
+    overflow: hidden;
+}
+
+.product-thumbs .sliderProduct ul#slide-product {
+    display: flex;
+    transform: translateX(0);
+    transition: transform 0.9s ease-in-out;
+}
+
+.product-thumbs .sliderProduct ul li {
+    display: block;
+    cursor: pointer;
+}
+
+.product-thumbs .sliderProduct ul li a {
+    display: inline-block;
+    padding: 20px 10px;
+}
+
+.pre-next {
+    position: absolute;
+    color: #334862;
+    background-color: transparent;
+    border: 2px solid #334862;
+    border-radius: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 100;
+    opacity: 0;
+    display: none;
+}
+
+.product-thumbs:hover .pre-next {
+    display: block;
+}
+
+.product-thumbs .pre-next:hover {
+    opacity: 1;
+    background-color: #fff;
+}
+
+.product-thumbs .pre-next:focus {
+    outline: 0;
+}
+
+.product-thumbs .slide-next {
+    right: calc(0%);
+}
+
+.product-information {
+    padding: 0 20px;
+    text-align: center;
+}
+
+.product-title h3 {
+    font-size: 25px;
+    font-weight: 800;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.product-price {
+    color: #f5a623;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.select-wrapper {
+    margin: 20px 0;
+}
+
+.select-wrapper label {
+    font-weight: 500;
+    margin-right: 20px;
+}
+
+.select-wrapper .product-option {
+    border: none;
+}
+
+.select-wrapper .product-option:focus {
+    outline: none;
+}
+
+.select-wrapper #quantity {
+    width: 50px;
+    border: none
+}
+
+.select-wrapper #quantity:focus {
+    outline: none;
+}
+
+.add-to-cart i {
+    position: relative;
+    font-size: 20px;
+    background-color: #b16d00;
+    display: inline;
+}
+
+#add-to-cart {
+    background-color: #d88800;
+    color: #212529;
+    padding: 15px 20px;
+    border: none;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+#buy-now {
+    background-color: #fae92f;
+    color: #212529;
+    padding: 15px 20px;
+    border: none;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+#add-to-cart:focus,
+#buy-now:focus {
+    outline: none;
+}
+
+.tabbed-content {
+    border-top: 1px solid #d6d3d3;
+    flex-flow: row-wrap;
+    margin-bottom: 20px;
+}
+
+.tabbed-content ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    margin: 7px 7px;
+    font-weight: 500;
+    transition: background-color .3s;
+}
+
+.tabbed-content ul li.active a {
+    border-top: 3.5px solid #f5a623;
+}
+
+.tabbed-content ul li a {
+    color: #212529;
+    padding: 7px 0;
+    font-size: 20px;
+}
+
+.tabbed-content ul li a:hover {
+    text-decoration: none;
+    border-top: 3.5px solid #f5a623;
+}
+
+.tab-panels {
+    padding: 10px 0;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.attributes {
+    width: 100%;
+    margin-bottom: 1em;
+    border-color: #ececec;
+    border-spacing: 0;
+}
+
+.attributes tr {
+    border-bottom: 1px solid #d6d3d3;
+    margin-bottom: 5px;
+}
+
+.attributes .table-label {
+    padding: 15px 0;
+}
+
+#comment {
+    padding: 0 10px;
+}
+
+.tab-panels .panel:not(.active) {
+    zoom: 1;
+    float: "left";
+    visibility: hidden;
+    height: 0;
+    padding: 0;
+    display: block;
+    overflow: hidden;
+    opacity: 0;
+}
+
+.tab-panels .panel.active {
+    opacity: 1;
+}
+
+.tab-panels .panel span {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.tab-panels .panel .commentlist {
+    margin-top: 20px;
+}
+
+.tab-panels .panel .flex-row {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    width: 100%;
+}
+
+.tab-panels .panel .align-top {
+    justify-content: flex-start !important;
+    align-items: flex-start !important;
+    align-self: flex-start !important;
+    vertical-align: top !important;
+}
+
+.tab-panels .panel .align-top img {
+    max-width: 100%;
+    height: auto;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.tab-panels .panel .comment-text {
+    padding: 0 5px;
+    position: relative;
+}
+
+.tab-panels .panel .comment-text p {
+    margin-top: 0;
+}
+
+.tab-panels .panel .comment-text .star-rating {
+    margin-bottom: 0;
+}
+
+#review_form_container {
+    padding: 0 10px;
+    border: 2px solid #f5a623;
+}
+
+.comment-respond {
+    padding: 10px 0;
+}
+
+.comment-respond .comment-form {
+    margin-top: 10px;
+    padding: 0 10px;
+    font-weight: 600;
+}
+
+.comment-respond .comment-form .comment-form-rating {
+    margin-bottom: 20px;
+}
+
+.comment-respond .comment-form p {
+    margin: 0 0;
+}
+
+.comment-respond .comment-form .comment-form-comment textarea {
+    max-width: 100%;
+    width: 100%;
+    vertical-align: middle;
+    background-color: #fff;
+    color: #333;
+    box-shadow: inset 0 1px 2px rgb(0 0 0 / 10%);
+    margin-bottom: 30px;
+}
+
+.comment-respond .comment-form .comment-form-aumail {
+    display: flex;
+}
+
+.comment-respond .comment-form .comment-form-aumail label {
+    width: 100%;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #111
+}
+
+.comment-respond .comment-form .comment-form-aumail input {
+    max-width: 100%;
+    width: 100%;
+    vertical-align: middle;
+    background-color: #fff;
+    color: #333;
+    box-shadow: inset 0 1px 2px rgb(0 0 0 / 10%);
+    margin-bottom: 30px;
+}
+
+.comment-respond .comment-form .comment-form-aumail .comment-form-author {
+    padding-right: 20px;
+}
+
+.comment-respond .comment-form .comment-form-aumail .comment-form-email {
+    padding-left: 20px;
+}
+
+.comment-respond .comment-form .comment-form-submit {
+    float: right;
+}
+
+.comment-respond .comment-form .comment-form-submit input {
+    background-color: #f5a623;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    font-weight: 600;
+    margin-bottom: 30px;
+}

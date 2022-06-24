@@ -1,0 +1,102 @@
+img {
+    max-width: 100%;
+    height: auto
+}
+
+.styled-header {
+    width: 100%;
+    float: left;
+    margin-bottom: 30px;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 40px;
+    border-bottom: 1px dotted #0f0f0f;
+}
+
+.styled-header .icon {
+    display: block;
+    width: 30px;
+    min-height: 20px;
+    position: absolute;
+    left: 50%;
+    bottom: -12px;
+    margin-left: -10px;
+    font-size: #fff;
+    text-align: center;
+    background-color: #fff;
+}
+
+.styled-header .icon img {
+    max-width: 20px;
+}
+
+.pro-loop {
+    padding: 0 10px;
+}
+
+.product-block {
+    overflow: hidden;
+    width: 100;
+    position: relative;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.product-img {
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+}
+
+.first-image {
+    position: relative;
+    border-radius: 3px;
+}
+
+.second-image {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    max-height: 100%;
+    transform: translateX(-101%);
+}
+
+.product-img:hover .first-image {
+    transform: translateY(101%);
+    transition: transform 0.8s ease;
+}
+
+.product-img:hover .second-image {
+    transform: translateX(0%);
+    transition: transform 0.8s ease;
+}
+
+.product-detail {
+    display: block;
+    margin: 10px 0 10px 0;
+    padding: 0 10px;
+    text-align: center;
+    position: relative;
+}
+
+.product-detail h3 {
+    margin-bottom: 0;
+}
+
+.product-detail h3 a {
+    font-size: 14px !important;
+    color: #0f0f0f;
+}
+
+.product-detail h3 a:hover {
+    color: #f5a623;
+    text-decoration: none;
+}
+
+.product-detail .pro-prices {
+    color: #f5a623;
+    font-family: Montserrat;
+}

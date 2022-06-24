@@ -1,0 +1,52 @@
+img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.carousel {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    overflow: hidden;
+    z-index: 999;
+    margin-bottom: 15px;
+}
+
+.image-container {
+    display: flex;
+    transform: translateX(0);
+    transition: transform 0.5s ease-in-out;
+}
+
+.buttons-container {
+    position: absolute;
+    top: 40%;
+}
+
+.arrow {
+    position: absolute;
+    color: #fff;
+    background-color: transparent;
+    font-size: 30px;
+    border: none;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 100;
+}
+
+.arrow:focus {
+    outline: 0;
+}
+
+.arrow:hover {
+    border: 2px solid #334862;
+}
+
+.left-arrow {
+    float: left;
+    left: calc(15vw - 150px);
+}
+
+.right-arrow {
+    float: right;
+    right: calc(-95vw - 0px);
+}

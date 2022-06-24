@@ -14,6 +14,7 @@ function run() {
 
     changeImage()
 }
+console.log(img.length)
 
 function changeImage() {
     if (idx > img.length - 1) {
@@ -31,7 +32,7 @@ function resetInterval() {
 
 rightBtn.addEventListener('click', () => {
     idx++
-
+    console.log("vao")
     changeImage()
     resetInterval()
 })

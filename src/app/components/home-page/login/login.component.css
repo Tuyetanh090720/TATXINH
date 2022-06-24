@@ -1,0 +1,187 @@
+#myModal {
+    display: block;
+    position: fixed;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100000;
+    outline: 0;
+    background-color: #f5a623;
+}
+
+.title-login-form {
+    font-size: 30px;
+    text-transform: capitalize;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #334862;
+}
+
+@media (min-width:992px) and (max-width:1199px) {
+    .title-login-form {
+        font-size: 28px
+    }
+}
+
+@media (min-width:768px) and (max-width:991px) {
+    .title-login-form {
+        font-size: 26px
+    }
+}
+
+@media (min-width:576px) and (max-width:767px) {
+    .title-login-form {
+        font-size: 24px
+    }
+}
+
+@media only screen and (max-width:575px) {
+    .title-login-form {
+        font-size: 22px
+    }
+}
+
+.close {
+    padding: 5px 5px;
+}
+
+.login-form {
+    background: #fff;
+    border: 1px solid #dcdcdc;
+    padding: 30px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px
+}
+
+@media only screen and (max-width:767px) {
+    .login-form {
+        margin-bottom: 15px
+    }
+}
+
+.login-form label {
+    width: 100%;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #111
+}
+
+.login-form input {
+    height: 40px;
+    padding: 0 10px;
+    width: 100%;
+    border-radius: 0;
+    border: 1px solid #dcdcdc;
+    margin-bottom: 15px;
+    color: #111;
+    font-weight: 500;
+    font-size: 15px
+}
+
+.login-form input:focus {
+    outline: 0;
+    border: 1px solid #dcdcdc
+}
+
+.login-form button {
+    margin-bottom: 30px;
+    color: #fff;
+    padding: 8px 0;
+    background: #f5a623;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 550;
+    display: inline-block;
+    width: 140px;
+    text-align: center;
+    border: 2px solid #f5a623;
+    -webkit-transition: all .5s ease-out;
+    -moz-transition: all .5s ease-out;
+    -ms-transition: all .5s ease-out;
+    -o-transition: all .5s ease-out;
+    transition: all .5s ease-out
+}
+
+.login-form button:hover {
+    border-color: #D26E4B;
+    opacity: 0.8;
+}
+
+.login-form a {
+    font-weight: 400;
+    color: #f5a623
+}
+
+.login-form a:hover {
+    color: #f5a623;
+}
+
+.login-form .checkbox {
+    padding-left: 20px
+}
+
+.login-form .checkbox label {
+    display: inline-block;
+    position: relative;
+    padding-left: 5px;
+    font-weight: 400!important
+}
+
+.login-form .checkbox label:before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    left: 0;
+    top: 4px;
+    margin-left: -20px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background-color: #fff;
+    -webkit-transition: border .15s ease-in-out, color .15s ease-in-out;
+    -o-transition: border .15s ease-in-out, color .15s ease-in-out;
+    transition: border .15s ease-in-out, color .15s ease-in-out
+}
+
+.login-form .checkbox label:after {
+    display: inline-block;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    left: 0;
+    top: 0;
+    margin-top: 0;
+    margin-left: -20px;
+    padding-left: 3px;
+    padding-top: 1px;
+    font-size: 11px;
+    color: #555
+}
+
+.login-form .checkbox input[type=checkbox] {
+    opacity: 0;
+    visibility: hidden
+}
+
+.login-form .checkbox input[type=checkbox]:checked+label::after {
+    font-family: FontAwesome;
+    content: "\f00c";
+}
+
+.login-form .checkbox-primary input[type=checkbox]:checked+label::before {
+    background-color: #f5a623;
+    border-color: #f5a623
+}
+
+.login-form .checkbox-primary input[type=checkbox]:checked+label::after {
+    color: #fff
+}
