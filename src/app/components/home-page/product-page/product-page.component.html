@@ -44,13 +44,12 @@
                                     </li> -->
                                 </ul>
                             </div>
-                            <button class="pre-next slide-prev" id="slide-prev">
-                          <i class="fas fa-chevron-left"></i>
-                      </button>
-
-                            <button class="pre-next slide-next" id="slide-next">
-                          <i class="fas fa-chevron-right"></i>
-                      </button>
+                            <button class="pre-next slide-prev" (click)="transThumb($event, 'slide-prev')">
+                <i class="fas fa-chevron-left"></i>
+              </button>
+                            <button class="pre-next slide-next" (click)="transThumb($event, 'slide-next')">
+                <i class="fas fa-chevron-right"></i>
+              </button>
                         </div>
                     </div>
                 </div>
@@ -81,15 +80,15 @@
                         <div class="select-wrapper">
                             <label for="">Màu sắc</label>
                             <span class="custom-dropdown">
-                          <select name="" id="product-option" class="product-option">
-                              <option value="Trắng xanh">Trắng xanh</option>
-                              <option value="Nâu mũi đen">Nâu mũi đen</option>
-                              <option value="Khối màu">Khối màu</option>
-                              <option value="Xanh trắng">Xanh trắng</option>
-                              <option value="Ly bia">Ly bia</option>
-                              <option value="Bánh sinh nhật">Bánh sinh nhật</option>
-                          </select>
-                      </span>
+                <select name="" id="product-option" class="product-option">
+                  <option value="Trắng xanh">Trắng xanh</option>
+                  <option value="Nâu mũi đen">Nâu mũi đen</option>
+                  <option value="Khối màu">Khối màu</option>
+                  <option value="Xanh trắng">Xanh trắng</option>
+                  <option value="Ly bia">Ly bia</option>
+                  <option value="Bánh sinh nhật">Bánh sinh nhật</option>
+                </select>
+              </span>
                         </div>
                         <div class="select-wrapper">
                             <label for="">Số lượng</label>
@@ -97,13 +96,13 @@
                         </div>
                         <div class="add-to-cart">
                             <button id="add-to-cart">
-                          <span>Thêm vào giỏ hàng</span>
-                      </button>
+                <span>Thêm vào giỏ hàng</span>
+              </button>
                         </div>
                         <div class="buy-now">
                             <button id="buy-now">
-                          <span>Mua ngay</span>
-                      </button>
+                <span>Mua ngay</span>
+              </button>
                         </div>
                     </form>
                 </div>
@@ -118,20 +117,22 @@
         <div class="container">
             <div class="tabbed-content">
                 <ul class="product-tabs">
-                    <li class="description-tab active">
+                    <li class="description-tab active" (click)="clickTab($event, 'active', '0')">
                         <a id="description-tab">Mô tả</a>
                     </li>
-                    <li class="additional-tab">
+                    <li class="additional-tab" (click)="clickTab($event, 'active', '1')">
                         <a id="additional-tab">Thông tin bổ sung</a>
                     </li>
-                    <li class="reviews-tab">
+                    <li class="reviews-tab" (click)="clickTab($event, 'active', '2')">
                         <a id="reviews-tab">Đánh giá</a>
                     </li>
                 </ul>
                 <div class="tab-panels">
                     <div class="panel entry-content active" id="tab-description">
                         <p>1. Thành phần chất liệu: 70% Cotton; 25% Nylon; 5% Elastane.<br> 2. Hướng dẫn bảo quản:<br> - Giặt ở nhiệt độ nước không quá 30 độ C.<br> - Không dùng nước tẩy (ví dụ: nước Javel).<br> - Phơi dọc sản phẩm sau khi giặt.<br> - Không
-                            là (ủi) sản phẩm.<br> - Không giặt khô ở nhiệt độ cao (trên 50 độ C).<br> - Giặt riêng 3 lần đầu những sản phẩm có màu đậm.<br> 3. Size vớ: áp dụng theo kích thước bàn chân; phù hợp với hầu hết người Châu Á (230mm-285mm).<br>                            4. Đối tượng sử dụng:<br> - Nam/nữ giới văn phòng.<br> - Người tập thể thao.<br> - Giới trẻ.<br> 5. Ship hàng nhanh chóng; đổi hàng dễ dàng.<br> + Hình ảnh mô tả chi tiết độ dài sản phẩm.<br> + Bảng Size giày tham khảo.
+                            là (ủi) sản phẩm.<br> - Không giặt khô ở nhiệt độ cao (trên 50 độ C).<br> - Giặt riêng 3 lần đầu những sản phẩm có màu đậm.<br> 3. Size vớ: áp dụng theo kích thước bàn chân; phù hợp với hầu hết người Châu Á (230mm-285mm).
+                            <br> 4. Đối tượng sử dụng:<br> - Nam/nữ giới văn phòng.<br> - Người tập thể thao.<br> - Giới trẻ.
+                            <br> 5. Ship hàng nhanh chóng; đổi hàng dễ dàng.<br> + Hình ảnh mô tả chi tiết độ dài sản phẩm.<br> + Bảng Size giày tham khảo.
                         </p>
                     </div>
                     <div class="panel entry-content" id="tab-additional">
@@ -180,12 +181,12 @@
                                                 <label for="">Đánh giá của bạn</label>
                                                 <p class="stars">
                                                     <span>
-                                                  <a href="" class="star-1">1</a>
-                                                  <a href="" class="star-2">2</a>
-                                                  <a href="" class="star-3">3</a>
-                                                  <a href="" class="star-4">4</a>
-                                                  <a href="" class="star-5">5</a>
-                                              </span>
+                                                    <a href="" class="star-1">1</a>
+                                                    <a href="" class="star-2">2</a>
+                                                    <a href="" class="star-3">3</a>
+                                                    <a href="" class="star-4">4</a>
+                                                    <a href="" class="star-5">5</a>
+                                                  </span>
                                                 </p>
                                             </div>
                                             <div class="comment-form-comment">

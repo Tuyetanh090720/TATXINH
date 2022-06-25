@@ -80,6 +80,7 @@ img {
 
 .product-thumbs:hover .pre-next {
     display: block;
+    opacity: 1;
 }
 
 .product-thumbs .pre-next:hover {

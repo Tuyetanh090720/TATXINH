@@ -147,11 +147,11 @@
                                 </div>
                             </div>
                         </div>
-                        <button class="deal-arrow deal-left-arrow" id="deal-left">
+                        <button class="deal-arrow deal-left-arrow" (click)="sliderDeal($event, 'deal-left')">
                           <i class="fas fa-chevron-left"></i>
                       </button>
 
-                        <button class="deal-arrow deal-right-arrow" id="deal-right">
+                        <button class="deal-arrow deal-right-arrow" (click)="sliderDeal($event, 'deal-right')">
                           <i class="fas fa-chevron-right"></i>
                       </button>
                     </div>

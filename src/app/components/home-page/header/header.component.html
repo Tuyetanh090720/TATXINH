@@ -10,7 +10,7 @@
                             </li>
                             <li>
                                 <i class="fa fa-calendar"></i>
-                                <span></span>
+                                <span>{{myDate | date:'yyyy-MM-dd  hh:mm a' }}</span>
                             </li>
                         </ul>
                     </div>
@@ -22,71 +22,71 @@
     <div class="mean-bar-mobile">
         <div class="container">
             <div class="row">
-                <div class="nav-bar-icon" id="nav-bar-icon">
-                    <a class="meanmenu-reveal">
-                        <i class="fa fa-bars"></i>
+                <div class="nav-bar-icon" id="nav-bar-icon" (click)="showMenu()">
+                    <a class="meanmenu-reveal ">
+                        <i class="fa fa-bars "></i>
                     </a>
                 </div>
-                <div class="logo-mobile">
-                    <a href="Home.html">
-                        <img src="https://thoitrangshop.xyz/wp-content/uploads/2022/05/Baby-Shower-Template-1-1.png">
-                    </a>
-                </div>
-
-                <div class="user-mobile">
-                    <a id="loginBtnMobile" [routerLink]="['/login']">
-                        <i class="fa fa-user-circle"></i>
+                <div class="logo-mobile ">
+                    <a href="Home.html ">
+                        <img src="https://thoitrangshop.xyz/wp-content/uploads/2022/05/Baby-Shower-Template-1-1.png ">
                     </a>
                 </div>
 
-                <div class="menu-mobile">
-                    <nav class="mean-nav">
+                <div class="user-mobile ">
+                    <a id="loginBtnMobile " [routerLink]="[ '/login'] ">
+                        <i class="fa fa-user-circle "></i>
+                    </a>
+                </div>
+
+                <div class="menu-mobile ">
+                    <nav class="mean-nav ">
                         <ul>
                             <li>
-                                <a href="Home.html">Trang chủ</a>
+                                <a href="Home.html ">Trang chủ</a>
                             </li>
-                            <li class="plus" id="plus0">
-                                <a href="#">Tất họa tiết
+                            <li class="plus " (click)="showNeMenu($event, 'active', '0')">
+                                <a>Tất họa tiết
                               <span>+</span>
                           </a>
-                                <ul class="ne-dropdown-menu">
+                                <ul class="ne-dropdown-menu ">
                                     <li>
-                                        <a href="single.html">Hình học</a>
+                                        <a href="single.html ">Hình học</a>
                                     </li>
                                     <li>
-                                        <a href="single.html">Lộn xộn</a>
+                                        <a href="single.html ">Lộn xộn</a>
                                     </li>
                                     <li>
-                                        <a href="single.html">Thức ăn</a>
+                                        <a href="single.html ">Thức ăn</a>
                                     </li>
                                 </ul>
                             </li>
-                            <li class="plus" id="plus1">
-                                <a href="#">Tất trơn
+                            <li class="plus " (click)="showNeMenu($event, 'active', '1')">
+                                <a>Tất trơn
                               <span>+</span>
                           </a>
-                                <ul class="ne-dropdown-menu">
+                                <ul class=" ne-dropdown-menu ">
                                     <li>
-                                        <a href="single.html">Bèo</a>
+                                        <a href="single.html ">Bèo</a>
                                     </li>
                                     <li>
-                                        <a href="single.html">Cao</a>
+                                        <a href="single.html ">Cao</a>
                                     </li>
                                     <li>
-                                        <a href="single.html">Ngắn</a>
+                                        <a href="single.html ">Ngắn</a>
                                     </li>
                                 </ul>
                             </li>
-                            <li class="plus" id="plus2">
-                                <a href="#">Tất dị
+                            <li class="plus " (click)="showNeMenu($event, 'active', '2')">
+                                <a>Tất dị
                               <span>+</span>
                           </a>
-                                <ul class="ne-dropdown-menu">
+                                <ul class="ne-dropdown-menu ">
                                     <li>
-                                        <a href="single.html">Khác màu</a>
+                                        <a href="single.html ">Khác màu</a>
                                     </li>
                                     <li>
-                                        <a href="single.html">Ren</a>
+                                        <a href="single.html ">Ren</a>
                                     </li>
                                 </ul>
                             </li>
@@ -99,57 +99,57 @@
     <!-- end of mobile menu -->
 
     <!-- start of main menu -->
-    <div class="main-menu-area bg-body border-bottom" id="sticker">
-        <div class="container">
-            <div class="row align-items-center line">
-                <div class="col-lg-2 col-md-2">
-                    <div class="logo-area">
-                        <img src="https://thoitrangshop.xyz/wp-content/uploads/2022/05/Baby-Shower-Template-1-1.png" alt="" class="img-fluid">
+    <div class="main-menu-area bg-body border-bottom " id="sticker ">
+        <div class="container ">
+            <div class="row align-items-center line ">
+                <div class="col-lg-2 col-md-2 ">
+                    <div class="logo-area ">
+                        <img src="https://thoitrangshop.xyz/wp-content/uploads/2022/05/Baby-Shower-Template-1-1.png " alt=" " class="img-fluid ">
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-6">
-                    <div class="ne-main-menu">
-                        <nav id="dropdown">
+                <div class="col-lg-6 col-md-6 ">
+                    <div class="ne-main-menu ">
+                        <nav id="dropdown ">
                             <ul>
                                 <li>
-                                    <a href="index.html">Trang chủ</a>
+                                    <a href="index.html ">Trang chủ</a>
                                 </li>
                                 <li>
-                                    <a href="#">Tất họa tiết</a>
-                                    <ul class="ne-dropdown-menu">
+                                    <a href="# ">Tất họa tiết</a>
+                                    <ul class="ne-dropdown-menu ">
                                         <li>
-                                            <a href="single.html">Hình học</a>
+                                            <a href="single.html ">Hình học</a>
                                         </li>
                                         <li>
-                                            <a href="single.html">Lộn xộn</a>
+                                            <a href="single.html ">Lộn xộn</a>
                                         </li>
                                         <li>
-                                            <a href="single.html">Thức ăn</a>
+                                            <a href="single.html ">Thức ăn</a>
                                         </li>
                                     </ul>
                                 </li>
                                 <li>
-                                    <a href="#">Tất trơn</a>
-                                    <ul class="ne-dropdown-menu">
+                                    <a href="# ">Tất trơn</a>
+                                    <ul class="ne-dropdown-menu ">
                                         <li>
-                                            <a href="single.html">Bèo</a>
+                                            <a href="single.html ">Bèo</a>
                                         </li>
                                         <li>
-                                            <a href="single.html">Cao</a>
+                                            <a href="single.html ">Cao</a>
                                         </li>
                                         <li>
-                                            <a href="single.html">Ngắn</a>
+                                            <a href="single.html ">Ngắn</a>
                                         </li>
                                     </ul>
                                 </li>
                                 <li>
-                                    <a href="#">Tất dị</a>
-                                    <ul class="ne-dropdown-menu">
+                                    <a href="# ">Tất dị</a>
+                                    <ul class="ne-dropdown-menu ">
                                         <li>
-                                            <a href="single.html">Khác màu</a>
+                                            <a href="single.html ">Khác màu</a>
                                         </li>
                                         <li>
-                                            <a href="single.html">Ren</a>
+                                            <a href="single.html ">Ren</a>
                                         </li>
                                     </ul>
                                 </li>
@@ -157,18 +157,18 @@
                         </nav>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-4">
-                    <div class="header-action-item on-mobile-fixed">
+                <div class="col-lg-4 col-md-4 ">
+                    <div class="header-action-item on-mobile-fixed ">
                         <ul>
-                            <li class="search-item">
-                                <form action="" id="searchArea">
-                                    <button id="searchItem"><i class="fa fa-search"></i></button>
-                                    <input type="text" class="search-input" id="searchInput" placeholder="Search...." required="">
+                            <li class="search-item ">
+                                <form action=" " id="searchArea ">
+                                    <button id="searchItem"><i class="fa fa-search "></i></button>
+                                    <input type="text " class="search-input" id="searchInput" placeholder="Search.... " required=" ">
                                 </form>
                             </li>
-                            <li class="header-divider"></li>
-                            <li class="account-item">
-                                <a id="loginBtn" [routerLink]="['/login']">Đăng nhập</a>
+                            <li class="header-divider "></li>
+                            <li class="account-item ">
+                                <a id="loginBtn " [routerLink]="[ '/login'] ">Đăng nhập</a>
                             </li>
                             <li class=" header-divider "></li>
                             <li class="cart-item ">

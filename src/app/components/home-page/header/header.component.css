@@ -1,3 +1,8 @@
+img {
+    width: 100%;
+    object-fit: cover;
+}
+
 .bg-primarytextcolor {
     background-color: #111
 }
@@ -121,7 +126,6 @@ ul.news-info-list li i {
     border-radius: 0;
     opacity: 0;
     margin: 0;
-    padding-left: 0;
     min-width: 150px;
     top: 100%;
     position: absolute;
@@ -201,6 +205,7 @@ ul.news-info-list li i {
     font-size: 15px;
     padding: 10px 15px;
     font-weight: 1000;
+    outline: none;
 }
 
 .header-action-item ul li.search-item #searchItem:hover {
@@ -214,11 +219,11 @@ ul.news-info-list li i {
 .header-action-item ul .search-input {
     position: absolute;
     display: flex;
-    width: 770%;
+    max-width: 500%;
     border-radius: 10px;
     border-right: none;
     border: #334862 solid 1px;
-    opacity: 0;
+    opacity: 1;
     margin-top: 5px;
     top: 100%;
     z-index: 9999999;
@@ -448,7 +453,7 @@ ul.news-info-list li i {
     }
 }
 
-@media (max-width:992px) {
+@media (max-width:1200px) {
     .main-menu-area {
         display: none;
     }
