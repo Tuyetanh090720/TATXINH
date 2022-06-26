@@ -3,7 +3,7 @@
         <div class="modal-content">
             <div class="modal-header">
                 <div class="title-login-form">Đăng Ký</div>
-                <button type="button" class="close" data-dismiss="modal" id="closeRegister">&times;</button>
+                <button type="button" class="close" data-dismiss="modal" id="closeRegister" (click)="cancel()">&times;</button>
             </div>
             <div class="modal-body">
                 <div class="login-form">
@@ -19,7 +19,7 @@
                             <label for="checkbox">Nhớ tôi</label>
                         </div>
                         <button type="submit" value="Login">Đăng ký</button>
-                        <button class="form-cancel" type="submit" value="">Hủy</button>
+                        <button type="button" class="form-cancel" (click)="cancel()">Hủy</button>
                     </form>
                 </div>
             </div>
